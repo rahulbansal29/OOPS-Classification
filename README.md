@@ -104,8 +104,8 @@ class Dog:
     def speak(self):
         print("My name is {}".format(self.name))
  
- Driver code
- Object instantiation
+  Driver code
+  Object instantiation
  
  - Rodger = Dog("Rodger")
  - Tommy = Dog("Tommy")
@@ -182,13 +182,43 @@ class Person(object):
 - IdNumber: 886012
 - Post: Intern
 
+##  Python Polymorphism
+- Polymorphism simply means having many forms. For example, we need to determine if the given species of birds fly or not, using polymorphism we can do this using a single function.
+
+## Polymorphism in Python
+- This code demonstrates the concept of inheritance and method overriding in Python classes. It shows how subclasses can override methods defined in their parent class to provide specific behavior while still inheriting 
+  other methods from the parent class.
+
+#  Method Overloading:
+
+- Two or more methods have the same name but different numbers of parameters or different types of parameters, or both. These methods are called overloaded methods and this is called method overloading. 
+
+- Like other languages (for example, method overloading in C++) do, python does not support method overloading by default. But there are different ways to achieve method overloading in Python. 
+
+- The problem with method overloading in Python is that we may overload the methods but can only use the latest defined method.
+
+      # First product method.
+      # Takes two argument and print their
+      # product
 
 
+      def product(a, b):
+	p = a * b
+	print(p)
+
+      # Second product method
+      # Takes three argument and print their
+      # product
 
 
+def product(a, b, c):
+	p = a * b*c
+	print(p)
+
+     # Uncommenting the below line shows an error
+     # product(4, 5)
 
 
-
-
-
+    # This line will call the second product method
+product(4, 5, 5)
 
